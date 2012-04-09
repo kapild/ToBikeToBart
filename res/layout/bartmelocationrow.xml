@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">    
+      
+        
+     <TextView
+	      android:id="@+id/bartmestationname"
+	      	android:gravity="right"
+		      	android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+              
+     <TextView
+         android:id="@+id/bartmestationdistance"
+	      	android:gravity="left"
+      	android:textSize="12dp"
+      	android:textStyle="italic"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"/>
+     
+     
+</LinearLayout>
+
+<!--           android:background="#aa0000" -->

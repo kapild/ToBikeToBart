@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <Spinner
+        android:id="@+id/spinnerOrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/org" />
+ 
+    <Spinner
+        android:id="@+id/spinnerDest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/dest" />
+    
+	<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/departing_now" 
+	    android:id="@+id/dateTimeSelectButton"/>
+	<!-- <TextView android:id="@+id/selectedDateLabel" android:gravity="center" android:layout_height="wrap_content" 
+	    android:layout_width="fill_parent" android:layout_centerInParent="true" android:textSize="25dp"></TextView> -->
+		    
+    
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkButton" />
+
+    <Button
+        android:id="@+id/refreshLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh_loc" />
+    
+</LinearLayout>

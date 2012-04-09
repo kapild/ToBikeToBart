@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+	 	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:layout_weight="1">    
+
+       <TextView
+			android:text="@string/bikes_allowed"           
+	      	android:gravity="center"
+	         android:layout_width="wrap_content"
+	         android:layout_height="fill_parent"
+			  android:layout_weight="1"
+   		/>
+	    	    
+       <TextView
+	     android:text="@string/originTime"
+           
+	      	android:gravity="center"
+	         android:layout_width="wrap_content"
+	         android:layout_height="fill_parent"
+			  android:layout_weight="1"
+   		/>
+   <TextView
+	     android:text="@string/station"
+	      	android:gravity="center"
+	         android:layout_width="wrap_content"
+	         android:layout_height="fill_parent"
+      android:layout_weight="1"
+   />
+   <TextView
+	     android:text="@string/destTime"
+	      	android:gravity="center"
+	         android:layout_width="wrap_content"
+	         android:layout_height="fill_parent"
+      android:layout_weight="1"
+   />
+	     
+	</LinearLayout>
+		

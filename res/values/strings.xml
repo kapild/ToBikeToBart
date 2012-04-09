@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ToBikeOnBartActivity!</string>
+    <string name="app_name">ToBikeOnBart</string>
+    <string name="org">Select departing station</string>    
+    <string name="dest">Select arriving station station</string>    
+    <string name="checkButton">To bike or not bike</string>    
+    <string name="dateSliderTitle">Selected date</string>
+    <string name="main_no_items">Invalid search</string>
+    <string name="bikes_allowed">Is Allowed?</string>
+    <string name="originTime">Origin</string>
+    <string name="destTime">Destination</string>
+    <string name="station">Train</string>
+    <string name="departing_now">Departing now</string>
+    <string name="refresh_loc">Refresh Loc</string>
+    <string name="arrivetime">Arrival Time</string>
+    <string name="arrivaltime">Arrival Time</string>
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+    
+</resources>
