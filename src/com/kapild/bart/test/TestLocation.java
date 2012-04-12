@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.javadocmd.simplelatlng.LatLng;
-import com.kapild.bart.BartMeLocation;
-import com.kapild.bart.BartStationNameAPI;
-import com.kapild.bart.GeoHelper;
-import com.kapild.bart.SortedBartDistance;
+import com.kapild.bart.api.BartStationNameAPI;
+import com.kapild.bart.objects.business.BartMeLocation;
+import com.kapild.bart.objects.business.SortedBartDistance;
+import com.kapild.bart.utils.GeoHelper;
 
 public class TestLocation {
 
