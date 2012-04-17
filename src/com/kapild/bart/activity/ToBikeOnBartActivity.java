@@ -3,6 +3,9 @@ package com.kapild.bart.activity;
 import java.util.Calendar;
 import java.util.List;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 import com.googlecode.android.widgets.DateSlider.DateSlider;
 import com.googlecode.android.widgets.DateSlider.DateTimeSlider;
 import com.kapild.bart.R;
@@ -24,6 +27,7 @@ import android.os.StrictMode;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 //http://stackoverflow.com/questions/2227292/how-to-get-latitude-and-longitude-of-the-mobiledevice-in-android
 //http://stackoverflow.com/questions/3145089/what-is-the-simplest-and-most-robust-way-to-get-the-users-current-location-in-a/3145655#3145655
@@ -38,6 +42,8 @@ public class ToBikeOnBartActivity extends Activity {
 	private static boolean  isCheck; 
 	static final int DATETIMESELECTOR_ID = 5;
     private static Calendar originCal = null;
+    private AdView adView;
+    private String PUB_ID = "a14f8dc16e16569";
 	 
 	 List<BartMeLocation> bartList;
 	 BartMeLocationArrayAdapter dataAdapter;	 
@@ -70,6 +76,8 @@ public class ToBikeOnBartActivity extends Activity {
         setContentView(R.layout.main);
 //      locationClick(); 
         
+        addAddComponenet();
+        
         //add the origin Spinner
         addItemsOnSpinnerOrigin();
         
@@ -99,6 +107,25 @@ public class ToBikeOnBartActivity extends Activity {
             }
         });
         
+    }
+    
+    
+    private void addAddComponenet(){
+        // Create the adView
+      adView = new AdView(this, AdSize.BANNER, PUB_ID);
+
+      // Lookup your LinearLayout assuming it’s been given
+      LinearLayout layout = (LinearLayout)findViewById(R.id.mainLLayout);
+
+      // Add the adView to it
+      layout.addView(adView);
+
+      AdRequest adRequest = new AdRequest();
+      adRequest.addTestDevice(AdRequest.TEST_EMULATOR);      
+      
+      // Initiate a generic request to load it with an ad
+      adView.loadAd(adRequest);        
+    	
     }
     
     // add items into spinner dynamically
